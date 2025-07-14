@@ -1,0 +1,26 @@
+{
+  "employees": [
+    {
+      "id": "073e",
+      "name": "Sasafung Limbu",
+      "email": "sasa@gmail.com",
+      "department": "marketing",
+      "designation": "midlevel",
+      "userType": "hr",
+      "salary": "490000",
+      "password": "please",
+      "date": "2025-07-07"
+    },
+    {
+      "id": "f132",
+      "name": "Meow meow",
+      "email": "lilmeow@gmail.com",
+      "department": "engineering",
+      "designation": "senior",
+      "userType": "manager",
+      "salary": "123000",
+      "password": "meow",
+      "date": "2025-07-08"
+    }
+  ]
+}
