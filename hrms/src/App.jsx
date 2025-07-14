@@ -14,14 +14,18 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<LoginForm />}></Route>
+        <Route path="/" element={<LoginForm />}/>
           <Route path="home" element={
             <ProtectedRoute>
               <Home/>
             </ProtectedRoute>
               }>
-          <Route path='dashboard' element={<Dashboard/>}></Route>
-          <Route path='employee' element={<Employee/>}></Route>
+          <Route path='dashboard' element={<Dashboard/>}/>
+          <Route path='employee' element={<ProtectedRoute allowedRoles={["hr", "manager", "admin"]}>
+              <Employee/>
+            </ProtectedRoute>
+
+          }></Route>
           </Route>
           
       </Routes>
