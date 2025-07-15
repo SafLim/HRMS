@@ -9,6 +9,8 @@ import Dashboard from './pages/dashboard'
 import Employee from './pages/employee'
 import ProtectedRoute from './components/utils/protectedRoute'
 import Unauthorized from './components/utils/unauthorize'
+import LogoutButton from './components/utils/logout'
+
 function App() {
   const [count, setCount] = useState(0)
 
